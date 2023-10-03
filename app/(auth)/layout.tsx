@@ -1,11 +1,7 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
-      <body className="grid place-content-center">{children}</body>
-    </html>
+    <div className="h-full flex items-center justify-center">{children}</div>
   );
-}
+};
+
+export default AuthLayout;
